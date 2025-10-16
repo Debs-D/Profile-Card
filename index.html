@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="avatar-section">
+        <img
+          data-testid="test-user-avatar"
+          src="./img//IMG_1527.JPG"
+          alt="Portrait of Debs-Dev"
+        />
+      </figure>
+
+      <div class="content-section">
+        <header>
+          <h1 data-testid="test-user-name">I'm Debs-Dev</h1>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Over the next two months, I aim to embark on a transformative journey
+          of growth and self-discovery. I aspire to dive deeper into the world
+          of tech — learning ReactJS, building a project that solves a real-world
+          problem, and connecting with like-minded developers.
+        </p>
+
+        <p class="time">
+          Current Time (ms): <span id="time" data-testid="test-user-time"></span>
+        </p>
+
+        <nav
+          data-testid="test-user-social-links"
+          aria-label="Social media links"
+          class="social-links"
+        >
+          <a
+            data-testid="test-user-social-linkedin"
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            data-testid="test-user-social-twitter"
+            href="https://x.com/Doa_debbie"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </nav>
+
+        <section>
+          <h2>Hobbies</h2>
+          <ul data-testid="test-user-hobbies">
+            <li>Dancing</li>
+            <li>Reading</li>
+            <li>Movies</li>
+            <li>Basketball</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Dislikes</h2>
+          <ul data-testid="test-user-dislikes">
+            <li>Lies</li>
+            <li>Dishonesty</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
