@@ -1,7 +1,8 @@
+
 function updateTime() {
   const timeEl = document.getElementById("time");
   if (timeEl) {
-    timeEl.textContent = new Date().toLocaleTimeString();
+    timeEl.textContent = Date.now();
   }
 }
 setInterval(updateTime, 1000);
@@ -9,7 +10,7 @@ updateTime();
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
-  if (!form) return;
+  if (!form) return; 
 
   const success = document.getElementById("success");
   const loading = document.getElementById("loading");
