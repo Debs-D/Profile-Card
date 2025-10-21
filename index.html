@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile - Debs Dev</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
 
-  <body>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Debs<span>-Dev</span></h2>
+      <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="./Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <article class="profile-card" data-testid="test-profile-card">
       <figure class="avatar-section">
-        <img
-          data-testid="test-user-avatar"
-          src="./img//IMG_1527.JPG"
-          alt="Portrait of Debs-Dev"
-        />
+        <img data-testid="test-user-avatar" src="./img/IMG_1527.JPG" alt="Portrait of Debs-Dev" />
       </figure>
 
       <div class="content-section">
@@ -29,7 +34,7 @@
         <p data-testid="test-user-bio">
           Over the next two months, I aim to embark on a transformative journey
           of growth and self-discovery. I aspire to dive deeper into the world
-          of tech — learning ReactJS, building a project that solves a real-world
+          of tech learning ReactJS, building a project that solves a real-world
           problem, and connecting with like-minded developers.
         </p>
 
@@ -37,28 +42,13 @@
           Current Time (ms): <span id="time" data-testid="test-user-time"></span>
         </p>
 
-        <nav
-          data-testid="test-user-social-links"
-          aria-label="Social media links"
-          class="social-links"
-        >
-          <a
-            data-testid="test-user-social-linkedin"
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
+        <nav data-testid="test-user-social-links" aria-label="Social media links" class="social-links">
+          <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/ayishat-odekunle-a7146527a/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
-
-          <a
-            data-testid="test-user-social-twitter"
-            href="https://x.com/Doa_debbie"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
+          <a data-testid="test-user-social-twitter" href="https://x.com/Doa_debbie" target="_blank"
+            rel="noopener noreferrer" aria-label="Twitter">
             <i class="fab fa-x-twitter"></i>
           </a>
         </nav>
@@ -82,7 +72,12 @@
         </section>
       </div>
     </article>
+  </main>
 
-    <script src="./script.js"></script>
-  </body>
+  <footer>
+    <p>© 2025 Debs-Dev | Crafted with ❤️</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
 </html>
